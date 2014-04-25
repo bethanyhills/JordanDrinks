@@ -30,6 +30,15 @@ body {
   margin-bottom: 10px;
 }
 
+#post h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#post h6 {
+  margin-top: 5px;
+}
+
 #logo {
   background: url("freebeersign.jpeg");
   background-repeat: no-repeat;
