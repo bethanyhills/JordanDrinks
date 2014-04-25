@@ -2,19 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-   background: #F9F9F9; 
-   color: #222; 
+   color: #513C3C; 
    font-family: 'Droid Serif', serif; 
    font-size: 16px; 
+}
+
+#home {
+  
+  background: url("wood.jpg");  
+  color: #513C3C; 
+  font-family: 'Droid Serif', serif; 
+  font-size: 16px;
 }
 
 #wrapper { 
   margin: 10px auto; 
   max-width: 980px; 
   width: 90%; 
-  background: #fff; 
+  background: #CEF6F5;
   padding: 10px 0; 
 }
+
+#post {
+  background: #FBF8EF;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#logo {
+  background: url("freebeersign.jpeg");
+  background-repeat: no-repeat;
+  float: right;  
+}
+
 
 h1 {
   font-size: 90px;
@@ -38,7 +59,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-family: "Helvitica";
+  font-family: "Helvetica";
   font-size: 18px;
   padding: 10px;
   -webkit-transition-property: font-size;
@@ -69,20 +90,16 @@ h4 a:hover {
 }
 
 nav { 
-  background: #222; 
+  background-color: #CEF6F5; 
   padding: 0; 
   margin: 10px 0;
 }
 
 nav a { 
-  color: #F9F9F9; 
+  color: orange;
   display: block; 
   float: left; 
   padding: 10px; 
-}
-
-nav a:visited { 
-  color: #f9f9f9; 
 }
 
 nav a:hover { 
@@ -104,6 +121,9 @@ nav a:active {
   width: 20%;
   float: right;
   margin-bottom: 10px;
+  background: #FBF8EF;
+  border-radius: 15px;
+  padding: 20px;
   -webkit-transition-property: width;
   -moz-transition-property: width;
   transition-property: width;
@@ -114,10 +134,18 @@ nav a:active {
   -moz-transition-timing function: linear, ease-in; 
   transition-timing function: linear, ease-in;
 }
-
  
+.sidebar a {
+  color: #513C3C;
+} 
+
+.sidebar h4 a {
+  color: orange;
+}
+
 #featured { 
-  padding: 20px; 
+  padding: 20px;
+  background: #FBF8EF; 
 }
 
 #latest { 
@@ -126,6 +154,11 @@ nav a:active {
 
 #about { 
   padding: 20px; 
+  background: #FBF8EF;
+}
+
+#about h3 {
+  color: orange;
 }
 
 p { 
@@ -141,12 +174,25 @@ ul li {
 }
  
 footer { 
-  padding: 5px; 
+  padding: 5px;
 }
 
 
 /*::-moz-selection  { background-color: #91D8f7; color: #fff; }
 ::selection     { background-color: #91D8f7; color: #fff; }*/
+#title {
+  float: left;
+}
+
+#title a {
+  color: orange;
+}
+
+#subtitle {
+  font-style: italic;
+}
+
+
 
 a { 
   outline: 0; 

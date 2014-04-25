@@ -13,21 +13,20 @@
   <div id="wrapper">
 
     <header>
-      <h1><a href="index.html">Jordan Drinks</a></h1>
-      <h2>Craft Brew Reviews in Pint Form</h2>
+      <h1 id="title"><a href="index.html">Jordan Drinks</a></h1>
+      <h2 id="subtitle">Craft Brew Reviews in Pint Form</h2>
+
       <nav>
         <a href="#">Home</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <a href="#about">About</a>
+        <a href="#about">Contact</a>
+        <a href="posts/new">New Post</a>
       </nav>
     </header>
     <section id="main-content">
       <div id="featured">
-        <h3>Featured Blog Post:</h3>
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/></p>
-      </div> <!-- End featured -->
+
+      </div>
     <hr/>
       <div id="latest">
 
@@ -44,31 +43,25 @@
         </div>
       <% end %>
       </div>
-      <%= link_to 'New Post', new_post_path %>
       </section> <!-- close left-col -->
 
       <aside class="sidebar">
-        <h4><a href="#">Archives</a></h4>
-        <ul>
-          <li><a href="#">July 2010</a></li>
-          <li><a href="#">August 2010</a></li>
-          <li><a href="#">September 2010</a></li>
-        </ul>
-        <br/>
-        <h4><a href="#">Blogs to Follow</a></h4>
-        <ul>
-          <li><a href="#">Blog Name</a></li>
-          <li><a href="#">Blog Name</a></li>
-          <li><a href="#">Blog Name</a></li>
-        </ul>
-        <br/>
-        <h4><a href="#">Social</a></h4>
-        <ul>
-          <li><a href="#">Facebook</a></li>
+         <h4><a href="#">Find Jordan</a></h4>
+          <ul>
           <li><a href="#">Twitter</a></li>
-          <li><a href="#">RSS</a></li>
-          <li><a href="#">Google+</a></li>
+          <li><a href="#">Email</a></li>
         </ul> 
+        <br/>
+        <h4><a href="#">Blogs He Likes</a></h4>
+        <ul>
+          <li><a href="http://crafttaste.com/">Craft Taste</a></li>
+          <li><a href="#">Blog Name</a></li>
+          <li><a href="#">Blog Name</a></li>
+        </ul>
+        <br/>
+        <div id="untappd">
+          <p>Untappd Feed Coming Soon!</p>
+        </div>
       </aside>
       </div> <!-- end latest -->
 
@@ -76,7 +69,8 @@
       <hr/>
       <div id="about">
         <h3>About</h3>
-        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
+        <p>Jordan is a native Austinite.  He enjoys craft brews, soccer, good conversation.  Sometimes all at the same time.</p>  <p>All reviews and opinions expressed here are his own. </p>
+        <p></p>
       </div>
     </section>
     <hr/>

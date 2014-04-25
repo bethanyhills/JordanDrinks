@@ -1,5 +1,27 @@
-<h1>New post</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jordan Drinks</title>
+  <%= stylesheet_link_tag 'posts', media: 'all'%>
+  <%= stylesheet_link_tag 'media-queries', media: 'all'%>
+  <!-- use viewport tab to fit site to viewport of mobile browser -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body id="home">
+  <div id="wrapper">
 
-<%= render 'form' %>
+    <h1>New post</h1>
 
-<%= link_to 'Back', posts_path %>
+    <%= render 'form' %>
+
+    <%= link_to 'Back', posts_path %>
+
+
+  </div>  <!--  End wrapper -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+</body>
+</html>
