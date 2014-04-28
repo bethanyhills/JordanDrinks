@@ -15,6 +15,22 @@ body {
   font-size: 16px;
 }
 
+.logo {
+  background: url("pint.png");
+  height: 32px;
+  width: 32px;
+  float: right;
+}
+
+#untappd-logo {
+  background: url("untappd-logo.png");
+  height: 50px;
+}
+
+#untappd > h4 {
+  text-align: center;
+}
+
 #wrapper { 
   margin: 10px auto; 
   max-width: 980px; 
@@ -39,11 +55,6 @@ body {
   margin-top: 5px;
 }
 
-#logo {
-  background: url("freebeersign.jpeg");
-  background-repeat: no-repeat;
-  float: right;  
-}
 
 
 h1 {
@@ -152,6 +163,20 @@ nav a:active {
   color: orange;
 }
 
+
+.beer li {
+  font-size: 12px;
+  margin-left: -40px;
+  padding-top: 2px;
+}
+
+.beer p {
+  font-size: 10px;
+  margin-top: -15px;
+  margin-left: -6px;
+  font-style: italic;
+}
+
 #featured { 
   padding: 20px;
   background: #FBF8EF; 
@@ -200,7 +225,6 @@ footer {
 #subtitle {
   font-style: italic;
 }
-
 
 
 a { 
