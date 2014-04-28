@@ -60,7 +60,7 @@
           <li><a href="#">Blog Name</a></li>
         </ul>
         <br/>
-        <div id="untappd">
+        <div id="untappd" data-id ="<%= @client_id %>" data-secret="<%= @client_secret %>">
           <p>Untappd Feed Coming Soon!</p>
         </div>
       </aside>
@@ -82,6 +82,8 @@
   </div>  <!--  End wrapper -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <%= javascript_include_tag 'posts' %>
+
 
 </body>
 </html>

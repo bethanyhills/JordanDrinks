@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all(:order => 'created_at DESC')
+    @client_id = ENV["CLIENTID"]
+    @client_secret = ENV["CLIENTSECRET"]
   end
 
   # GET /posts/1
