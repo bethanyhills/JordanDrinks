@@ -25,6 +25,7 @@ body {
 #untappd-logo {
   background: url("untappd-logo.png");
   height: 50px;
+  margin-top: -15px;
 }
 
 #untappd > h4 {
