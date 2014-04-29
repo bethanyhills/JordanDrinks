@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <%= csrf_meta_tag %>
   <title>Jordan Drinks</title>
   <%= stylesheet_link_tag 'posts', media: 'all'%>
   <%= stylesheet_link_tag 'media-queries', media: 'all'%>
@@ -19,8 +20,8 @@
       <nav>
         <a href="#">Home</a>
         <a href="#about">About</a>
-        <a href="#about">Contact</a>
-        <a href="posts/new">New Post</a>
+        <a href="http://untappd.com/jh1640">Untappd</a>
+        <a href="http://twitter.com/jhills1640">Twitter</a>
       </nav>
     </header>
     <section id="main-content">
@@ -37,10 +38,12 @@
           <h3><%=post.title %></h3>
           <h6><%=post.created_at.strftime("%B %d, %Y") %></h6>
           <%= simple_format post.body %>
+          <% if user_signed_in? %>
           <small>
           <%= link_to 'Edit', edit_post_path(post) %>
           <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
         </small>
+        <% end %>
         </div>
       <% end %>
       </div>
@@ -67,11 +70,16 @@
     <footer>
       <p>&copy; Bethany Nagel</p>
     </footer>
-
+    <% if user_signed_in? %>
+    <%= link_to "New Post", new_post_path %>
+    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    <% end %>
   </div>  <!--  End wrapper -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <%= javascript_include_tag "jquery", "jquery_ujs" %>
   <%= javascript_include_tag 'posts' %>
+
 
 
 </body>

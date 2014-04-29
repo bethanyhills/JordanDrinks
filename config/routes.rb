@@ -1,4 +1,7 @@
 Blog::Application.routes.draw do
+  devise_for :users do 
+    delete 'Sign Out' => 'devise/sessions#destroy', as: :destroy_user_session
+  end
   root 'posts#index'
   resources :posts
 
