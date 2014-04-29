@@ -133,6 +133,16 @@ nav a:active {
   top: 0; 
 }
 
+.content {
+  width: 50%;
+  float: left;
+}
+.photo {
+  width: 40%;
+  float: right;
+  height: auto;
+}
+
 .left-col {
   width: 70%;
   float: left;
@@ -251,3 +261,5 @@ a:active {
 .clearfix { 
   clear: both; 
 }
+
+

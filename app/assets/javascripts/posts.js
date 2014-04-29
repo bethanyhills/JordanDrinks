@@ -48,4 +48,12 @@ $(document).ready(function () {
     } //close for loop
 
   }); //close get request
-}); //close document ready
+
+  // $('.content').hide();
+  //   $('button').click(function() {
+  //       $('this').parent('#post').children('.content').slideToggle(1000);
+  //       return false;
+  //   });
+
+});  //close document ready
+
