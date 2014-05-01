@@ -1,9 +1,11 @@
 Blog::Application.routes.draw do
   devise_for :users do 
+    # get 'Sign In' => 'devise/sessions#new', :as => :user_session
     delete 'Sign Out' => 'devise/sessions#destroy', as: :destroy_user_session
   end
   root 'posts#index'
   resources :posts
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

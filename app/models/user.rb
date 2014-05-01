@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_many :posts
 
   attr_accessor :login
+  attr_accessor :password
 end
