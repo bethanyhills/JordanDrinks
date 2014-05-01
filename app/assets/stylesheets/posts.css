@@ -68,9 +68,6 @@ h1 {
   -webkit-transition-duration: 0.5s, 0.5s;
   -moz-transition-duration: 0.5s, 0.5s;
   transition-duration: 0.5s, 0.5s; 
-  -webkit-transition-timing function: linear, ease-in;
-  -moz-transition-timing function: linear, ease-in; 
-  transition-timing function: linear, ease-in;
 }
 
 h1 a:hover {
@@ -88,9 +85,6 @@ h2 {
   -webkit-transition-duration: 0.5s, 0.5s;
   -moz-transition-duration: 0.5s, 0.5s;
   transition-duration: 0.5s, 0.5s; 
-  -webkit-transition-timing function: linear, ease-in;
-  -moz-transition-timing function: linear, ease-in; 
-  transition-timing function: linear, ease-in;
 }
 
 h3 { 
@@ -162,9 +156,6 @@ nav a:active {
   -webkit-transition-duration: 0.5s, 0.5s;
   -moz-transition-duration: 0.5s, 0.5s;
   transition-duration: 0.5s, 0.5s; 
-  -webkit-transition-timing function: linear, ease-in;
-  -moz-transition-timing function: linear, ease-in; 
-  transition-timing function: linear, ease-in;
 }
  
 .sidebar a {
