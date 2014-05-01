@@ -45,6 +45,7 @@ body {
   border-radius: 15px;
   padding: 5px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #post h3 {
@@ -133,14 +134,13 @@ nav a:active {
   top: 0; 
 }
 
-.content {
-  width: 50%;
-  float: left;
-}
 .photo {
-  width: 40%;
-  float: right;
+  width: auto;
   height: auto;
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .left-col {

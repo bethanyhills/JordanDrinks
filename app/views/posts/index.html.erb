@@ -37,12 +37,13 @@
         <div id="post">
           <h3><%=post.title %></h3>
           <h6><%=post.created_at.strftime("%B %d, %Y") %> | Author: <% if post.user.email.present? %> <%= post.user.email %> <%end%></h6>
-            <div class="content"><p><%= post.body %></p></div>
             <div class="photo">
             <% if post.attachment.present? %>
-              <iframe src= <%=post.attachment_url(:small)%> height="200" width="200"></iframe>
+              <img src= <%=post.attachment_url(:small)%> height="200" width="200"></img>
             <% end %>
             </div>
+            <div class="content"><p><%= post.body %></p></div>
+            
           <div class="clearfix"></div>
           <!-- <button>Show More</button> -->
           <% if user_signed_in? %>

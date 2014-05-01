@@ -9,9 +9,6 @@ $(document).ready(function () {
   $.get(url, function (data, status) {
     console.log(data);
     window.x = data["response"]["user"]["checkins"]["items"]
-    // assign recent beer object to variable
-    // window.x = data["response"]["user"]["recent_brews"]["items"];
-    // console.log(activity["response"]["user"]["recent_brews"]["items"][0]["beer"]["beer_name"]);
     // assign specific information on each beer to a variable
     for (var i = 0; i < x.length - 10; i++) {
       var beer = x[i]["beer"]["beer_name"];
@@ -31,6 +28,7 @@ $(document).ready(function () {
           brewery_url = brewery_url.substring(0, brewery_url.length - 1);
         }
 
+        //render out info for each checkin and append it to div
       $("#untappd").append("<div class='beer'>\
         <div class='logo'></div>\
         <h5><a href=" + brewery_url + ">" + beer +"</a></h5>\
@@ -48,12 +46,6 @@ $(document).ready(function () {
     } //close for loop
 
   }); //close get request
-
-  // $('.content').hide();
-  //   $('button').click(function() {
-  //       $('this').parent('#post').children('.content').slideToggle(1000);
-  //       return false;
-  //   });
 
 });  //close document ready
 

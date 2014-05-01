@@ -40,15 +40,15 @@ class ImageUploader < CarrierWave::Uploader::Base
     process :resize_to_fit => [200, 200]
   end
 
-  version :medium do
-    # this is one interpretation of what 'medium' is, yours may be different
-    process :resize_to_fit => [300, 300] # this means resize the image to 800 x 800 pixels
-  end
+  # version :medium do
+  #   # this is one interpretation of what 'medium' is, yours may be different
+  #   process :resize_to_fit => [300, 300] # this means resize the image to 800 x 800 pixels
+  # end
 
-    version :large do
-    # this is one interpretation of what 'medium' is, yours may be different
-    process :resize_to_fit => [800, 800] # this means resize the image to 800 x 800 pixels
-  end
+  #   version :large do
+  #   # this is one interpretation of what 'medium' is, yours may be different
+  #   process :resize_to_fit => [800, 800] # this means resize the image to 800 x 800 pixels
+  # end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
